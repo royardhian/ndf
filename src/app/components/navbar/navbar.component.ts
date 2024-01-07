@@ -1,8 +1,4 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { SwiperComponent } from './components/swiper/swiper.component';
 import { MatMenuModule } from '@angular/material/menu';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar';
@@ -11,15 +7,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
 
 @Component({
-  selector: 'app-root',
+  selector: 'app-navbar',
   standalone: true,
-  templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
   imports: [
-    CommonModule,
-    RouterOutlet,
-    NavbarComponent,
-    SwiperComponent,
     MatButtonModule,
     MatMenuModule,
     MatToolbarModule,
@@ -27,7 +17,7 @@ import { MatListModule } from '@angular/material/list';
     MatSidenavModule,
     MatListModule,
   ],
+  templateUrl: './navbar.component.html',
+  styleUrl: './navbar.component.scss',
 })
-export class AppComponent {
-  title = 'ndf';
-}
+export class NavbarComponent {}
