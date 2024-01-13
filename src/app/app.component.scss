@@ -1,3 +1,23 @@
 .custom-toolbar {
-    background-color: #efb509;
+    background-color: black;
+}
+
+.active {
+    @media only screen and (max-width: 1024px) {
+        display: block !important;
+    }
+    display: flex !important;
+}
+
+.inactive {
+    display: none !important;
+}
+
+.mat-white {
+    color: white;
+}
+.footer p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
 }

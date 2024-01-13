@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterOutlet } from '@angular/router';
+import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { SwiperComponent } from './components/swiper/swiper.component';
 import { MatMenuModule } from '@angular/material/menu';
@@ -9,6 +9,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatListModule } from '@angular/material/list';
+import { MatCardModule } from '@angular/material/card';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,8 @@ import { MatListModule } from '@angular/material/list';
   imports: [
     CommonModule,
     RouterOutlet,
+    RouterLink,
+    RouterLinkActive,
     NavbarComponent,
     SwiperComponent,
     MatButtonModule,
@@ -26,8 +29,29 @@ import { MatListModule } from '@angular/material/list';
     MatIconModule,
     MatSidenavModule,
     MatListModule,
+    MatCardModule,
   ],
 })
 export class AppComponent {
+
+  showMenu(show: boolean) {
+    this.colapse = show;
+  }
   title = 'ndf';
+  colapse: boolean = false;
+
+  ngOnInit() {
+    console.log(window.screen.width);
+    if (window.screen.width > 1024) {
+      // 768px portrait
+      this.colapse = true;
+    }
+  }
+
+  onResize(event: any) {
+    if (window.screen.width > 1024) {
+      // 768px portrait
+      this.colapse = true;
+    }
+  }
 }
