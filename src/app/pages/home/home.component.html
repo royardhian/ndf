@@ -1,0 +1,108 @@
+<div class="static">
+  <div class="lg:max-w-[1280px]">
+    <app-swiper></app-swiper>
+  </div>
+</div>
+<div class="w-full lg:max-w-[1280px]">
+  <div class="grid w-full py-3 my-2 bg-indigo-950 rounded-md">
+    <p class="text-center self-center text-2xl font-bold text-white">-Find Comfort For You-</p>
+  </div>
+
+
+  <!-- <div class="grid w-full">
+    <p class="text-center self-center text-xl font-bold">Our Product</p>
+  </div>
+  <div class="justify-center grid grid-cols-1 gap-4 md:grid-cols-3 content-center px-5">
+    <div class="grid w-full h-40 rounded-lg bg-amber-500 hover:bg-amber-400">
+      <p class="text-center self-center">Car Wash & Beauty</p>
+    </div>
+    <div class="grid w-full h-40 rounded-lg bg-amber-500 hover:bg-amber-400">
+      <p class="text-center self-center">Auto Detailing</p>
+    </div>
+    <div class="grid w-full h-40 rounded-lg bg-amber-500 hover:bg-amber-400">
+      <p class="text-center self-center">Coating Nano Ceramic</p>
+    </div>
+  </div> -->
+
+  <div class="grid w-full">
+    <div class="grid w-full py-3 bg-amber-400 rounded-md">
+      <p class="text-center self-center text-2xl font-bold">Kenapa Mobil Perlu di Coating Nano Ceramic?</p>
+    </div>
+
+    <div class="shadow-md px-10 py-5 my-2 bg-indigo-950 text-white">
+      <ul class="list-disc">
+        <li>
+          Perlindungan Ekstra: Permukaan mobil semakin terlindung dari goresan, debu, kerikil, dan bahan
+          abrasif lainnya dengan lapisan ganda Coating Nano Ceramic.
+        </li>
+        <li>
+          Bersinar dan memberikan tampilan menawan: Tampilan mobil dipercantik dengan coating nano
+          ceramic,
+          yang juga membantu cat terlihat lebih bersih dan menarik.
+        </li>
+        <li>
+          Tahan Lama: coating nano ceramic cenderung bertahan lama, memberikan perlindungan
+          konstan pada
+          permukaan mobil untuk jangka waktu yang lebih lama.
+        </li>
+        <li>
+          Efek Hidrofobik: Air dapat mengalir keluar dari permukaan mobil dengan lebih mudah
+          berkat efek
+          hidrofobik coating nano ceramic, yang mengurangi kemungkinan noda air dan meningkatkan kemampuan mobil untuk
+          tetap bersih.
+        </li>
+        <li>
+          Efek pembersihan sendiri: Jenis coating nano ceramic tertentu memiliki kemampuan untuk
+          membersihkan
+          dirinya sendiri di area yang lebih rentan menumpuk kotoran dan debu.
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid w-full">
+    <div class="grid w-full py-3 bg-amber-400 rounded-md mt-5">
+      <p class="text-center self-center text-2xl font-bold">Kenapa harus coating di NDF?</p>
+    </div>
+    <div class="shadow-md px-10 py-5 my-2 bg-indigo-950 text-white">
+      <ul class="list-disc">
+
+        <li>Terbaik kualitasnya</li>
+        <li>Terjangkau harganya</li>
+        <li>Terbanyak bonusnya</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="grid w-full">
+    <div class="grid w-full py-3 bg-amber-400 rounded-md mt-5">
+      <p class="text-center self-center text-2xl font-bold">FAQ</p>
+    </div>
+    <p class="text-center self-center text-lg font-bold">
+      Pertanyaan yang sering ditanyakan
+    </p>
+    <div class="px-5" *ngFor="let item of faq">
+      <mat-accordion>
+        <mat-expansion-panel hideToggle>
+          <mat-expansion-panel-header>
+            <mat-panel-title><p class="text-xl font-bold">{{item.title}}</p></mat-panel-title>
+          </mat-expansion-panel-header>
+          <div [innerHTML]='item.content'></div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+    </div>
+  </div>
+
+  <div class="grid w-full  text-white">
+    <p class="text-center self-center text-2xl font-bold py-10">
+      --- BERGABUNG SEKARANG ---
+    </p>
+    <p class="text-center self-center font-bold pb-10 px-10">
+      Kesuksesan bisnis tidak hanya tentang mengenali peluang, tetapi juga
+      tentang bagaimana anda mengambil tindakan untuk merealisasikannya
+    </p>
+  </div>
+
+  <app-footer></app-footer>
+</div>

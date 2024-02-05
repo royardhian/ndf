@@ -1,0 +1,157 @@
+<div class="grid w-full my-5 pt-5 shadow-xl rounded-md">
+
+    <div class="grid w-full py-2 mb-2 -my-5 bg-amber-400 rounded-md">
+        <p class="text-center self-center text-xl font-bold">PAKET</p>
+    </div>
+    <div class="justify-center grid grid-cols-1 gap-2 md:grid-cols-2 content-center px-5">
+        <div *ngFor="let item of wokshopDatas,index as i">
+            <div class="grid w-full rounded-lg p-10">
+                <div class="text-center self-center text-2xl font-bold text-white py-2">{{item.title}}</div>
+                <img (click)="openPopup(i)" [src]="item.image">
+                <div class="text-center self-center text-2xl font-bold text-white py-2" [innerHTML]="item.harga"></div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <!-- <div class="grid w-full py-2 mb-2 -my-5 bg-amber-400 rounded-md">
+        <p class="text-center self-center text-2xl font-bold">Paket Gold</p>
+    </div>
+    <div class="flex justify-center w-full h-[400px]">
+        <img class="h-[400px]" src="assets/img/p1.jpg">
+    </div>
+    <div class="p-5 bg-indigo-950 text-white shadow-md rounded-lg">
+        <p class="text-l font-bold">Harga dari 3.000.000 menjadi 1.500.000</p>
+        <p class="text-l">
+            Paket Gold Nano Ceramic Coating 3 Layers adalah pelindung cat, yang dilengkapi dengan garansi selama satu
+            tahun.
+            Selain melindungi dari polutan, debu, kotoran, jamur, dan hujan asam. Cat mobil tidak akan berubah warna,
+            terlihat basah, dan mudah dibersihkan karena kedap udara.
+        </p>
+        <h3>Kelebihan:</h3>
+        <ul class="list-disc list-inside">
+            <li>All Type</li>
+            <li>All Size</li>
+            <li>Garansi 1 tahun</li>
+            <li>Paint Protection</li>
+            <li>Mencegah pudarnya warna dari cat kendaraan. .</li>
+            <li>Tampak lembab dan mudah dibersihkan</li>
+            <li>Mengkilap dan tampak lembap</li>
+            <li>Mengering dengan cepat setelah aplikasi</li>
+            <li>Menggunakan coating 9h </li>
+        </ul>
+    </div> -->
+</div>
+<!-- <div class="grid w-full my-5 pt-5 shadow-xl rounded-md ">
+    <div class="grid w-full py-2 mb-2 -my-5 bg-amber-400 rounded-md">
+        <p class="text-center self-center text-2xl font-bold">Paket Platinum</p>
+    </div>
+    <div class="flex justify-center w-full h-[400px]">
+        <img class="h-[400px]" src="assets/img/p2.jpg">
+    </div>
+    <div class="p-5 bg-indigo-950 text-white shadow-md rounded-lg">
+
+        <p class="text-l font-bold">Harga dari 4.000.000 menjadi 2.000.000</p>
+        <p class="text-l">
+            Paket Platinum Nano Ceramic Coating 3 Layers adalah pelindung cat, yang dilengkapi dengan garansi selama dua
+            tahun. Selain melindungi dari polutan, debu, kotoran, jamur, dan hujan asam. Cat mobil tidak akan berubah
+            warna,
+            terlihat basah, dan mudah dibersihkan karena kedap udara.
+        </p>
+        <h3>Kelebihan:</h3>
+        <ul class="list-disc list-inside">
+            <li>All Type</li>
+            <li>All Size</li>
+            <li>Garansi 2 tahun</li>
+            <li>Paint Protection</li>
+            <li>Mencegah pudarnya warna dari cat kendaraan. .</li>
+            <li>Tampak lembab dan mudah dibersihkan</li>
+            <li>Mengkilap dan tampak lembap</li>
+            <li>Mengering dengan cepat setelah aplikasi</li>
+            <li>Menggunakan coating 9h</li>
+            <li>Maintenance sekali </li>
+        </ul>
+    </div>
+</div>
+<div class="grid w-full my-5 pt-5 shadow-xl rounded-md ">
+    <div class="grid w-full py-2 mb-2 -my-5 bg-amber-400 rounded-md">
+        <p class="text-center self-center text-2xl font-bold">Paket Ultimate</p>
+    </div>
+    <div class="flex justify-center w-full h-[400px]">
+        <img class="h-[400px]" src="assets/img/p3.jpg">
+    </div>
+    <div class="p-5 bg-indigo-950 text-white shadow-md rounded-lg">
+
+        <p class="text-l font-bold">Harga dari 6.000.000 menjadi 3.000.000</p>
+        <p class="text-l">
+            Paket Ultimate Nano Ceramic Coating 3 Layers adalah pelindung cat, yang dilengkapi dengan garansi selama
+            tiga
+            tahun. Selain melindungi dari polutan, debu, kotoran, jamur, dan hujan asam. Cat mobil tidak akan berubah
+            warna,
+            terlihat basah, dan mudah dibersihkan karena kedap udara.
+        </p>
+        <h3>Kelebihan:</h3>
+        <ul class="list-disc list-inside">
+            <li>All Type</li>
+            <li>All Size</li>
+            <li>Garansi 3 tahun</li>
+            <li>Paint Protection</li>
+            <li>Mencegah pudarnya warna dari cat kendaraan. .</li>
+            <li>Tampak lembab dan mudah dibersihkan</li>
+            <li>Mengkilap dan tampak lembap</li>
+            <li>Mengering dengan cepat setelah aplikasi</li>
+            <li>Menggunakan coating 10h</li>
+            <li>Maintenance sekali </li>
+        </ul>
+    </div>
+</div>
+<div class="grid w-full my-5 pt-5 shadow-xl rounded-md ">
+    <div class="grid w-full py-2 mb-2 -my-5 bg-amber-400 rounded-md">
+        <p class="text-center self-center text-2xl font-bold">Paket Motor</p>
+    </div>
+    <div class="flex justify-center w-full h-[400px]">
+        <img class="h-[400px]" src="assets/img/p4.jpg">
+    </div>
+    <div class="p-5 bg-indigo-950 text-white shadow-md rounded-lg">
+
+        <p class="text-l font-bold">Harga dari 1.500.000 menjadi 750.000</p>
+        <p class="text-l">
+            Paket Motor Nano Ceramic Coating adalah pelindung cat, yang dilengkapi dengan garansi selama satu tahun.
+            Selain
+            melindungi dari polutan, debu, kotoran, jamur, dan hujan asam. Cat mtorl tidak akan berubah warna, terlihat
+            basah, dan mudah dibersihkan karena kedap udara.
+        </p>
+        <h3>Kelebihan:</h3>
+        <ul class="list-disc list-inside">
+            <li>All Type</li>
+            <li>All Size</li>
+            <li>Garansi 1 tahun</li>
+            <li>Paint Protection</li>
+            <li>Mencegah pudarnya warna dari cat kendaraan. .</li>
+            <li>Tampak lembab dan mudah dibersihkan</li>
+            <li>Mengkilap dan tampak lembap</li>
+            <li>Mengering dengan cepat setelah aplikasi</li>
+            <li>Menggunakan coating 9h </li>
+        </ul>
+    </div>
+</div> -->
+
+<!-- <div class="grid w-full py-5">
+    <p class="text-center self-center text-xl font-bold">PAKET</p>
+</div>
+<div class="justify-center grid grid-cols-1 gap-4 md:grid-cols-2 content-center px-5">
+    <div class="grid w-full rounded-lg bg-amber-500 hover:bg-amber-400">
+        <img src="assets/img/p1.jpg">
+    </div>
+    <div class="grid w-full rounded-lg bg-amber-500 hover:bg-amber-400">
+        <img src="assets/img/p2.jpg">
+    </div>
+    <div class="grid w-full rounded-lg bg-amber-500 hover:bg-amber-400">
+        <img src="assets/img/p3.jpg">
+    </div>
+    <div class="grid w-full rounded-lg bg-amber-500 hover:bg-amber-400">
+        <img src="assets/img/p4.jpg">
+    </div>
+</div> -->
+<app-footer></app-footer>

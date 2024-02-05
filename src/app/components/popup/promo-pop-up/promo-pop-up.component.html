@@ -1,0 +1,15 @@
+<mat-dialog-content>
+    <div>
+        <div class="grid w-full py-2 mb-2 -my-5 bg-amber-400 rounded-md">
+            <p class="font-extrabold text-center text-2xl"> {{this.showWorkshop.title}}
+            </p>
+        </div>
+
+        <h3>
+            <div class="flex justify-center w-full bg-indigo-950">
+                <img class="w-3/4" [src]="this.showWorkshop.image" />
+            </div>
+            <div class="flex" [innerHTML]="this.showWorkshop.html"> </div>
+        </h3>
+    </div>
+</mat-dialog-content>

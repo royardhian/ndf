@@ -1,251 +1,68 @@
-<!-- <div class="flex justify-center">
-  <div class="fixed top-0 z-50 w-full md:max-w-[1280px]">
-    <header class="border-b font-[sans-serif]">
-      <div
-        class="flex flex-wrap items-center px-10 py-4 relative bg-black min-h-[64px]"
-      >
-        <a href="javascript:void(0)" class="hidden max-lg:block"
-          ><img class="h-[64px]" src="/assets/img/logo.jpg"
-        /></a>
-        <div class="flex ml-auto lg:order-1 lg:hidden" *ngIf="!colapse">
-          <button id="toggle" class="ml-7" (click)="showMenu(true)">
-            <mat-icon class="mat-white">menu</mat-icon>
-          </button>
-        </div>
-        <div class="flex ml-auto lg:order-1 lg:hidden" *ngIf="colapse">
-          <button id="toggle" class="ml-7" (click)="showMenu(false)">
-            <mat-icon class="mat-white">close</mat-icon>
-          </button>
-        </div>
-        <div
-          id="collapseMenu"
-          class="lg:!flex lg:items-center w-full max-lg:py-4 max-lg:hidden"
-          [ngClass]="colapse ? 'active' : 'inactive'"
-        >
-          <ul class="lg:flex lg:space-x-8 max-lg:space-y-2">
-            <li class="max-lg:border-b max-lg:py-2">
-              <a
-                href="javascript:void(0)"
-                class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                >About Us</a
-              >
-            </li>
-            <li class="max-lg:border-b max-lg:py-2">
-              <a
-                href="javascript:void(0)"
-                class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                >Product</a
-              >
-            </li>
-            <li class="max-lg:border-b max-lg:py-2">
-              <a
-                href="javascript:void(0)"
-                class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                >Workshop</a
-              >
-            </li>
-          </ul>
-          <a
-            href="javascript:void(0)"
-            class="m-auto absolute lg:left-2/4 lg:-translate-x-1/2 max-lg:hidden"
-            ><img class="h-[64px]" src="/assets/img/logo.jpg"
-          /></a>
-          <ul class="lg:flex lg:space-x-8 max-lg:space-y-2 ml-auto">
-            <li class="max-lg:border-b max-lg:py-2">
-              <a
-                href="javascript:void(0)"
-                class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                >Promo</a
-              >
-            </li>
-            <li class="max-lg:border-b max-lg:py-2">
-              <a
-                href="javascript:void(0)"
-                class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                >Booking</a
-              >
-            </li>
-            <li class="max-lg:border-b max-lg:py-2">
-              <a
-                href="javascript:void(0)"
-                class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                >News</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <router-outlet></router-outlet>
-    <div
-      class="footer justify-center grid grid-cols-1 md:grid-cols-3 divide-y md:divide-x bg-amber-400"
-    >
-      <div class="w-full">
-        <p>Call Us</p>
-        <p>+62 895-6357-61324</p>
-        <p>+62 851-7525-0856</p>
-      </div>
-      <div class="w-full">
-        <p>Email Us</p>
-        <p>lindajayasamudra&#64;gmail.com</p>
-      </div>
-      <div class="w-full">
-        <p>Opening Hours</p>
-        <p>Mon - Sun : 9 am - 7 pm</p>
-      </div>
-    </div>
-    <div class="justify-center grid grid-cols-1 md:grid-cols-3 bg-black">
-      <div class="w-full h-[275px]">
-        <img class="h-[275px]" src="/assets/img/logo.jpg" />
-      </div>
-      <div class="w-full p-2 text-center md:text-left pt-12">
-        <p class="text-amber-400">Our Service</p>
-        <p class="text-white">Car Wash & Beauty</p>
-        <p class="text-white">Auto Detailing</p>
-        <p class="text-white">Coating Nano Ceramic</p>
-      </div>
-      <div class="w-full p-2 text-center md:text-left pt-12">
-        <p class="text-amber-400">Head Office</p>
-        <p class="text-white">
-          Ruko Pasar Segar Graha Raya Bintaro Blok Rb-1 No.32, Pd. Jagung Timur,
-          Serpong Utara, Tangerang Selatan
-        </p>
-      </div>
-    </div>
-    <div class="w-full lg:max-w-[1280px]">
-      <div class="footer bg-amber-400 flex justify-center">
-        <p class="no-underline">
-          Copyright &#64; 2024 Ndf Coating And Car Wash
-        </p>
-      </div>
-    </div>
-  </div>
-</div> -->
+<div class="main">
 
-<div (window:resize)="onResize($event)" class="max-w-screen-xl mx-auto">
-  <div>
-    <div class="fixed top-0 z-50 w-full md:max-w-[1280px]">
-      <div class="border-b font-[sans-serif]">
-        <div
-          class="flex flex-wrap items-center px-10 py-4 relative bg-black min-h-[64px]"
-        >
-          <a href="javascript:void(0)" class="hidden max-lg:block"
-            ><img class="h-[64px]" src="/assets/img/logo.jpg"
-          /></a>
-          <div class="flex ml-auto lg:order-1 lg:hidden" *ngIf="!colapse">
-            <button id="toggle" class="ml-7" (click)="showMenu(true)">
-              <mat-icon class="mat-white">menu</mat-icon>
-            </button>
-          </div>
-          <div class="flex ml-auto lg:order-1 lg:hidden" *ngIf="colapse">
-            <button id="toggle" class="ml-7" (click)="showMenu(false)">
-              <mat-icon class="mat-white">close</mat-icon>
-            </button>
-          </div>
-          <div
-            id="collapseMenu"
-            class="lg:!flex lg:items-center w-full max-lg:py-4 max-lg:hidden"
-            [ngClass]="colapse ? 'active' : 'inactive'"
-          >
-            <ul class="lg:flex lg:space-x-8 max-lg:space-y-2">
-              <li class="max-lg:border-b max-lg:py-2">
-                <a
-                  href="javascript:void(0)"
-                  class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                  >About Us</a
-                >
-              </li>
-              <li class="max-lg:border-b max-lg:py-2">
-                <a
-                  href="javascript:void(0)"
-                  class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                  >Product</a
-                >
-              </li>
-              <li class="max-lg:border-b max-lg:py-2">
-                <a
-                  href="javascript:void(0)"
-                  class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                  >Workshop</a
-                >
-              </li>
-            </ul>
-            <a
-              href="javascript:void(0)"
-              class="m-auto absolute lg:left-2/4 lg:-translate-x-1/2 max-lg:hidden"
-              ><img class="h-[64px]" src="/assets/img/logo.jpg"
-            /></a>
-            <ul class="lg:flex lg:space-x-8 max-lg:space-y-2 ml-auto">
-              <li class="max-lg:border-b max-lg:py-2">
-                <a
-                  href="javascript:void(0)"
-                  class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                  >Promo</a
-                >
-              </li>
-              <li class="max-lg:border-b max-lg:py-2">
-                <a
-                  href="javascript:void(0)"
-                  class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                  >Booking</a
-                >
-              </li>
-              <li class="max-lg:border-b max-lg:py-2">
-                <a
-                  href="javascript:void(0)"
-                  class="hover:text-[#007bff] font-semibold text-white block text-[15px]"
-                  >News</a
-                >
-              </li>
-            </ul>
+  <div (window:resize)="onResize($event)" class="max-w-screen-xl mx-auto">
+    <div>
+      <div class="fixed top-0 z-50 w-full md:max-w-[1280px]">
+        <div class="border-b font-[sans-serif]">
+          <div class="flex flex-wrap items-center px-10 py-4 relative bg-indigo-950 min-h-[64px]">
+            <a routerLink="/" class="hidden max-lg:block"><img class="h-[64px]" src="assets/img/logo.png" /></a>
+            <div class="flex ml-auto lg:order-1 lg:hidden" *ngIf="!colapse">
+              <button id="toggle" class="ml-7" (click)="showMenu(true)">
+                <mat-icon class="mat-white">menu</mat-icon>
+              </button>
+            </div>
+            <div class="flex ml-auto lg:order-1 lg:hidden" *ngIf="colapse">
+              <button id="toggle" class="ml-7" (click)="showMenu(false)">
+                <mat-icon class="mat-white">close</mat-icon>
+              </button>
+            </div>
+            <div id="collapseMenu" class="lg:!flex lg:items-center w-full max-lg:py-4 max-lg:hidden"
+              [ngClass]="colapse ? 'active' : 'inactive'">
+              <ul class="lg:flex lg:space-x-8 max-lg:space-y-2">
+                <li class="max-lg:border-b max-lg:py-2">
+                  <a (click)="toogleMenu()" [routerLink]="['/']" routerLinkActive="active"
+                    class="hover:text-[#007bff] font-semibold text-white block text-[15px]">Home</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-2">
+                  <a (click)="toogleMenu()" [routerLink]="['/about']" routerLinkActive="active"
+                    class="hover:text-[#007bff] font-semibold text-white block text-[15px]">About Us</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-2">
+                  <a (click)="toogleMenu()" [routerLink]="['/product']"
+                    class="hover:text-[#007bff] font-semibold text-white block text-[15px]">Product</a>
+                </li>
+              </ul>
+              <a routerLink="/" class="m-auto absolute lg:left-2/4 lg:-translate-x-1/2 max-lg:hidden"><img
+                  class="h-[64px]" src="assets/img/logo.png" /></a>
+              <ul class="lg:flex lg:space-x-8 max-lg:space-y-2 ml-auto">
+                <li class="max-lg:border-b max-lg:py-2">
+                  <a (click)="toogleMenu()" [routerLink]="['/workshop']"
+                    class="hover:text-[#007bff] font-semibold text-white block text-[15px]">Workshop</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-2">
+                  <a (click)="toogleMenu()" [routerLink]="['/promo']"
+                    class="hover:text-[#007bff] font-semibold text-white block text-[15px]">Promo</a>
+                </li>
+                <li class="max-lg:border-b max-lg:py-2">
+                  <a (click)="toogleMenu()" [routerLink]="['/mitra']"
+                    class="hover:text-[#007bff] font-semibold text-white block text-[15px]">Kemitraan</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
+      <div class="pt-[96px] md:pt-[65px]"></div>
+      <router-outlet #outlet="outlet"></router-outlet>
     </div>
-    
-    <router-outlet></router-outlet>
 
     <div
-      class="footer justify-center grid grid-cols-1 md:grid-cols-3 divide-y md:divide-x bg-amber-400"
-    >
-      <div class="w-full">
-        <p>Call Us</p>
-        <p>+62 895-6357-61324</p>
-        <p>+62 851-7525-0856</p>
-      </div>
-      <div class="w-full">
-        <p>Email Us</p>
-        <p>lindajayasamudra&#64;gmail.com</p>
-      </div>
-      <div class="w-full">
-        <p>Opening Hours</p>
-        <p>Mon - Sun : 9 am - 7 pm</p>
-      </div>
+      class="fixed bottom-4 right-4 z-[51] transition transform hover:-translate-y-1 motion-reduce:transition-none motion-reduce:hover:transform-none rounded-xl bg-white p-2">
+      <a class="justify-self-center" aria-label="Chat on WhatsApp" href="https://wa.me/087786202538"> <img class="h-10"
+          alt="Chat on WhatsApp" [src]="myImgSrc" (mouseout)="myImgSrc = wa" (mouseover)="myImgSrc = wah">
+      </a>
     </div>
-    <div class="justify-center grid grid-cols-1 md:grid-cols-3 bg-black">
-      <div class="w-full h-[275px]">
-        <img class="h-[275px]" src="/assets/img/logo.jpg" />
-      </div>
-      <div class="w-full p-2 text-center md:text-left pt-12">
-        <p class="text-amber-400">Our Service</p>
-        <p class="text-white">Car Wash & Beauty</p>
-        <p class="text-white">Auto Detailing</p>
-        <p class="text-white">Coating Nano Ceramic</p>
-      </div>
-      <div class="w-full p-2 text-center md:text-left pt-12">
-        <p class="text-amber-400">Head Office</p>
-        <p class="text-white">
-          Ruko Pasar Segar Graha Raya Bintaro Blok Rb-1 No.32, Pd. Jagung Timur,
-          Serpong Utara, Tangerang Selatan
-        </p>
-      </div>
-    </div>
-    <div class="w-full lg:max-w-[1280px]">
-      <div class="footer bg-amber-400 flex justify-center">
-        <p class="no-underline">
-          Copyright &#64; 2024 Ndf Coating And Car Wash
-        </p>
-      </div>
-    </div>
+
   </div>
+
 </div>

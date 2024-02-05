@@ -32,8 +32,8 @@ export class SwiperComponent {
     injectStyles: [
       `
       .swiper-pagination-bullet {
-        width: 20px;
-        height: 20px;
+        width: 10px;
+        height: 10px;
         text-align: center;
         line-height: 20px;
         font-size: 12px;
