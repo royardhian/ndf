@@ -1,0 +1,10 @@
+{
+  "routes": [
+    "/about",
+    "/home",
+    "/mitra",
+    "/product",
+    "/promo",
+    "/workshop"
+  ]
+}

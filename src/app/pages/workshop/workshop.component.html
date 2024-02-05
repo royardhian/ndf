@@ -1,0 +1,9 @@
+<div class="p-10 bg-indigo-950 text-white">
+  <div class="">
+    <h3 class="text-2xl font-bold">Workshop Kita</h3>
+    <mat-list *ngFor="let item of wokshopDatas,index as i">
+      <mat-list-item (click)="openDialog(i)"><span class="text-white">- {{item.nama}}</span></mat-list-item>
+    </mat-list>
+  </div>
+</div>
+<app-footer></app-footer>

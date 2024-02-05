@@ -33,6 +33,16 @@ import { MatCardModule } from '@angular/material/card';
   ],
 })
 export class AppComponent {
+  toogleMenu() {
+    if (window.screen.width < 1024) {
+      this.showMenu(false);
+    } else {
+      this.showMenu(true);
+    }
+  }
+  wa: string = 'assets/img/Digital_Glyph_Green.svg';
+  wah: string = 'assets/img/WhatsAppButtonGreenSmall.svg';
+  myImgSrc: any = this.wa;
 
   showMenu(show: boolean) {
     this.colapse = show;
@@ -42,6 +52,7 @@ export class AppComponent {
 
   ngOnInit() {
     console.log(window.screen.width);
+    this.colapse = false;
     if (window.screen.width > 1024) {
       // 768px portrait
       this.colapse = true;
@@ -49,9 +60,10 @@ export class AppComponent {
   }
 
   onResize(event: any) {
-    if (window.screen.width > 1024) {
-      // 768px portrait
-      this.colapse = true;
+    if (window.screen.width < 1024) {
+      this.showMenu(false);
+    } else {
+      this.showMenu(true);
     }
   }
 }
